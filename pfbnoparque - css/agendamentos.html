@@ -1,0 +1,101 @@
+
+<!DOCTYPE html> 
+<html lang="pt-br">
+	<head>
+		<title>PFB no Parque </title>
+		<meta charset="utf-8">
+		<meta name="author" content="Alessandra e Tiago Segato" />
+		<meta name="Keywords" content="pfb,progressive fitball,parque da cidade,ar livre,atividade física,pilates,fitball" /> <!--até 150 caracteres -->
+		<meta name="description" content="Prática de atividade física ao ar livre utilizando a fitball">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	
+	</head>	
+	<body > 
+		<header>
+			<img src="img/banner.png" alt="banner do site contendo a imagem do parque da cidade com muito verde, um céu azul, num dia ensolarado contendo a logo do pfb no parque no centro">
+		</header>
+
+		<nav>
+			<a class= "a-menu" href="index.html">HOME</a>
+			<a class= "a-menu" href="index.html#pag-benecifios">BENEFÍCIOS</a>
+			<a class= "a-menu" href="index.html#pag-modalidades">MODALIDADES</a>
+			<a class= "a-menu" href="index.html#pag-treinos">TREINOS</a>
+			<a class= "a-menu" href="#">AGENDAMENTO</a>
+		</nav>
+
+		<section id="pag-agendamentos">
+			<h1>Agendamentos</h1>
+
+			<p>Agende uma aula experimental grátis!</p>
+
+		<form name="frm-agendar" method="GET" action="">
+
+			<label for="nome">Nome:</label>
+			<input id="nome"  type="text" name="nome" required placeholder="Digite seu nome completo" />
+
+			<label for="email">E-mail:</label>
+			<input id="email"  type="email" name="email" placeholder="seuemail@email.com" />
+
+			<label for="senha">Senha:</label>
+			<input id="senha"  type="password" name="senha" required placeholder="Senha com 8 caracteres" />
+
+			<label for="celular">Celular:</label>
+			<input id="celular"  type="tel" name="celular" required placeholder="(99) 99999-9999" pattern="^\(?\d{2}\)\d{5}[-\s]\d{4}.*?$" />
+
+			<div id="data-hora-num">
+				
+					<label for="data">Data:
+						<input id="data"  type="date" name="data" required />
+					</label>
+				
+					<label for="hora">Hora:
+						<input id="hora"  type="time" name="hora" required />
+					</label>
+				
+					<label for="aulas">Aulas:
+						<input id="aulas"  type="number" name="aulas" required min="1" max="15" step="1" />
+					</label> 
+				
+			</div>	
+
+			<label for="nivel">Nível:</label>
+			<select id="nivel" name="nivel">
+				<option>Selecione</option>
+				<option value="iniciante">Iniciante</option>
+				<option value="basico">Básico</option>
+				<option value="intermediario">Intermediário</option>
+				<option value="avancado">Avançado</option>
+			</select>
+
+			<fieldset>
+				<legend>Gênero</legend>
+				<input id="feminino" type="radio" name="genero" value="feminino"><label for="feminino">Feminino</label><br/>
+				<input id="masculino" type="radio" name="genero" value="masculino"><label for="masculino">Masculino</label>
+				
+			</fieldset>
+
+			<fieldset>
+				<legend>Atividades</legend>
+				<input id="musc"type="checkbox" name="atividades" value="musculacao"><label for="musc">Musculação</label><br/>
+				<input id="pila" type="checkbox" name="atividades" value="pilates"><label for="pila">Pilates</label><br/>
+				<input id="yoga" type="checkbox" name="atividades" value="yoga"><label for="yoga">Yoga</label><br/>
+				<input id="corr" type="checkbox" name="atividades" value="corrida"><label for="corr">Corrida</label>
+			</fieldset>
+
+			<label for="msg">Mensagem</label>
+			<textarea id="msg" cols="52" rows="4">
+			</textarea>
+
+			<div id="botoes-form">
+				<input type="submit" name="btn-enviar" value="Enviar" /> 
+				<input type="reset" name="btn-cancelar" value="Cancelar" /> 
+			</div>
+
+		</form>
+	</section>
+
+		<footer>
+			<p> Desenvolvido por <a href="http://instagram.com/nairinhaingrid">Naira Ingrid</a> - 2023</p>
+		</footer>
+	</body>
+</html>	

@@ -1,0 +1,295 @@
+/*seletor{propriedade:valor;}*/
+
+
+/* tipos de div: header(cabeçalho, logo, título), nav(navegação), section, main, article(conteúdo), aside(à parte - propaganda), footer*/
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto:ital,wght@0,100;0,300;0,700;1,400&display=swap');
+
+*{margin:0; padding:0;}
+
+
+body{
+	background-color: rgb(255,255,255);
+}
+
+header, img {
+	width: 100%;
+	height: 380px;
+}
+
+nav{ /*referente a caixa ao redor; altura e largura já se ajustam*/
+	background-color: #00BCD4;
+	text-align: center;
+	padding: 10px;
+}
+
+a{ /*referente ao texto da caixa*/
+	font:1.2rem ;'Roboto', sans-serif;
+  	text-decoration: none;
+}
+
+.a-menu{
+	margin-right: 40px;
+ 	font-weight: bold; /*poderia colocar tb a gramatura 300, 400*/
+}
+
+.a-menu:link /*carregado*/, .a-menu:visited /*visitado*/ {
+	color:#FFF;
+	margin-right: 40px;
+} 
+
+.a-menu:hover,/*quando passa o mouse sobre*/.a-menu:active { /*clicado*/
+	color:#3F51B5;
+}
+
+article {
+	width:100%;
+	background-color: #FFF;
+	padding:20px; /*margem ?*/
+	box-sizing: border-box; /*retira a barra de rolagem */
+}
+
+h1{
+	font:4rem 'Kaushan Script', cursive;
+	/*font-family: 'Kaushan Script', cursive;
+	font-size: 3rem; /* rem= porcentagem para texto; do tamanho original*/
+	color:#3F51B5;
+	text-align: center;
+	margin-bottom:50px; /*distancia da margem*/
+/*	margin: 5px 10px 20px 30 px na ordem topo, height??, bottom e left*/;
+}
+
+p{
+	font:1.2rem 'Roboto', sans-serif;
+	/*font-family: 'Roboto', sans-serif; /*(importado do google font; apostrofo para nome composto;serif, cursive)*/
+	/*font-size: 1.2rem;*/
+	color:#777;
+	text-align:justify;
+/*	text-indent: 20px; espaçamento do primeiro paragrafo*/
+	line-height:30px;/*espacamento entre letras*/
+}
+
+#txt-preto{
+	color:#000;
+}
+
+section{
+	padding: 20px;
+}
+
+h2{
+	font: 3rem 'Kaushan Script', cursive;
+	color: #3F51B5;
+	margin-bottom: 20px;
+}
+
+#pag-benecifios{ /*seletor de id*/
+	background-color: #00BCD4;
+}
+
+#pag-benecifios h2{
+	color: #FFF;
+}
+
+#pag-benecifios p{
+	color: #FFF;
+	margin-top: 30px;
+}
+
+ul{
+	/*list-style-position: inside ou outside; marcadores dentrou ou fora do box*/
+	/*list-style-image: (endereço da imagem);*/
+	list-style-type: circle;
+	padding: 20px 50px;
+}
+
+li{
+	font: 1.2rem 'Roboto', sans-serif;
+	color: #FFF;
+	margin-bottom: 10px;
+}
+
+#pag-modalidades{
+	background-color: #EEEEEE;
+}
+
+#container{
+	display: flex;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	/*justifay-content:space-between ---- deixa as fotos separadas com espaço uniforme (substitui os dois acima)*/
+}
+
+.card{ /*como está dentro da div, não precisa formatar as imagens separadas*/
+	background-color: #FFF;
+	margin:10px;
+	width:25%;
+	border-radius: 10px;/*arredonda as bordas*/
+	box-shadow: 10px 10px 10px #AAA; /*duas primeiras medidas: sombreado, para lado direito- usar valor negativo, terceira medida:; blur*/
+	transition: 0.1s;/*tempo do efeito de transição para o hover*/
+}
+
+.img-card{
+	width: 100%;
+	border-radius: 10px 10px 0 0;
+}
+
+.card-content{
+	padding: 10px;
+}
+.card:hover{
+	box-shadow: 0 8px 16px #CCC;
+}
+
+.card-content p{
+	font: 1rem 'Roboto', sans-serif;
+	line-height: 20px;/*espacamento entre letras*/
+	text-align: center;
+}
+
+h3{
+	font: 2rem 'Kaushan Script', cursive;
+	color: #00BCD4;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+#pag-treinos{
+
+}
+
+#pag-treinos p{
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+#container-treinos{
+	display: flex;
+}
+
+.coluna-treinos{
+	padding: 40px;
+}
+
+.container-imagens{
+	margin-top: 40px;
+	display: flex;
+	justify-content: center;/*centraliza o container*/
+	align-items: center; /*centraliza os itens do container*/
+
+}
+.container-imagens p{
+	color: #000;
+}
+
+.img-icones{
+	width: 30px;
+	height: 30px;
+	padding: 10px;
+}
+
+.link-contatos{
+	color: #212121;
+}
+
+video{
+	width: 400px;
+}
+
+footer{
+	background-color: #000;
+	padding: 20px;
+}
+
+footer p{
+	text-align: center;
+	color: #FFF;
+}
+
+footer a{
+	color: #FFF;
+}
+
+footer a:hover{
+	color: #00BCD4;
+}
+
+
+
+                               /*PAGINA DE AGENDAMENTOS*/
+
+
+
+#pag-agendamentos{
+	background-color: #E5E5E5;
+
+}
+#pag-agendamentos p{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+form{
+	width: 400px;
+	margin: 60px auto; /*centraliza horizontalmente 0 auto; para centralizar vertical também, 70px auto*/
+	background-color: #FFF;
+	padding: 20px;
+	border-radius: 20px;
+	box-shadow: 0 0 10px #777;
+}
+
+input, select, textarea{
+	width: 100%;
+	/*height: 30px;*/
+	margin: 10px 0 20px 0; /*margin-bottom: 10px;*/
+	padding-left: 5px;
+	box-sizing: border-box;
+	border: 1px solid #C4C4C4;
+	color: #777777;
+	font-weight: 300; /*gramatura da letra*/
+}
+
+label, fieldset, input, select, textarea{
+	font: 1rem 'Roboto', sans-serif;
+}
+
+fieldset{
+	border: 1px solid #CCC;
+	/*margin-bottom: 10px;
+	padding: 10px;*/
+}
+
+#data-hora-num{
+	display: flex;
+
+}
+#data-hora-num label{
+	/*width: 90%;*/
+	margin-right: 10px;
+}
+
+input[type="radio"], input[type= "checkbox"]{
+	width: 20px;
+	/*height: 15px;
+	margin-left: 50px;*/
+}
+
+textarea{
+	height: 80px;
+}
+
+#botoes-form{
+	display: flex;
+}
+
+input[type="submit"], input[type="reset"]{
+	margin: 20px;
+	background-color: #BBC34A;
+	color: #FFF;
+	border: 0;
+	border-radius: 5px;
+}
+
+input[type="reset"]{
+	background-color: #F47E7E;
+}
